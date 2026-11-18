@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Márcio Luiz Vieira da Silva | Psicólogo e Psicoterapeuta</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Cinzel / Cormorant Garamond (estilo similar à fonte serifada do cartão) + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones profissionais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- QRCode.js para geração dinâmica de QR Code de compartilhamento -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script>
+        if (window.tailwind) {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            navy: {
+                                800: '#243757',
+                                900: '#1f304b',
+                                950: '#17253b',
+                            },
+                            paper: '#f7f8fa',
+                            serene: '#93b1d1',
+                            gold: '#c8b282'
+                        },
+                        fontFamily: {
+                            display: ['Cinzel', 'Cormorant Garamond', 'serif'],
+                            sans: ['Inter', 'sans-serif'],
+                        }
+                    }
+                }
+            };
+        } else {
+            document.addEventListener('DOMContentLoaded', function () {
+                if (window.tailwind) {
+                    tailwind.config = {
+                        theme: {
+                            extend: {
+                                colors: {
+                                    navy: {
+                                        800: '#243757',
+                                        900: '#1f304b',
+                                        950: '#17253b',
+                                    },
+                                    paper: '#f7f8fa',
+                                    serene: '#93b1d1',
+                                    gold: '#c8b282'
+                                },
+                                fontFamily: {
+                                    display: ['Cinzel', 'Cormorant Garamond', 'serif'],
+                                    sans: ['Inter', 'sans-serif'],
+                                }
+                            }
+                        }
+                    };
+                }
+            });
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-[#eef1f5] via-[#f7f8fa] to-[#e3e8ef] text-navy-900 font-sans antialiased flex flex-col items-center justify-center p-4 sm:p-6 selection:bg-navy-900 selection:text-white">
+
+    <!-- Container Principal do Cartão Digital -->
+    <main class="w-full max-w-md bg-white rounded-3xl shadow-[0_20px_50px_rgba(23,37,59,0.12)] overflow-hidden border border-slate-200/80 transition-all duration-300">
+        
+        <!-- Cabeçalho Azul Marinho Profundo (Identidade Visual do Cartão) -->
+        <header class="relative bg-gradient-to-b from-navy-900 to-navy-950 text-white px-6 pt-10 pb-8 text-center overflow-hidden">
+            <!-- Detalhe decorativo sutil de fundo -->
+            <!-- Ícone Minimalista de Cérebro Estilizado (Lúdico, harmônico e formal) -->
+            <div class="mx-auto mb-5 w-24 h-24 rounded-2xl bg-white/[0.06] border border-white/15 flex items-center justify-center shadow-inner backdrop-blur-sm">
+                <svg class="w-16 h-16 text-white" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Brilho orgânico sutil ao fundo para dar leveza lúdica -->
+                    <circle cx="60" cy="58" r="42" fill="white" fill-opacity="0.04"/>
+
+                    <!-- Hemisfério Esquerdo (Lúdico e fluido, com circunvoluções suaves) -->
+                    <path d="M57 25C49.5 23.5 41.5 27.5 39 34.5C32.5 36 28 42.5 29.5 49.5C24.5 54 24.5 62.5 29.5 67.5C28.5 74.5 33.5 81.5 41 82.5C44.5 87.5 51.5 89 57 86"
+                          stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    <!-- Hemisfério Direito (Simétrico e equilibrado) -->
+                    <path d="M63 25C70.5 23.5 78.5 27.5 81 34.5C87.5 36 92 42.5 90.5 49.5C95.5 54 95.5 62.5 90.5 67.5C91.5 74.5 86.5 81.5 79 82.5C75.5 87.5 68.5 89 63 86"
+                          stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+                    <!-- Eixo Central (Fissura longitudinal) -->
+                    <path d="M60 22V93"
+                          stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+
+                    <!-- Dobras internas harmoniosas - Lado Esquerdo -->
+                    <path d="M41 37C46 37 49.5 40.5 49.5 45.5"
+                          stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                    <path d="M31.5 55.5C37.5 54.5 43.5 57.5 45 63.5"
+                          stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                    <path d="M41.5 74.5C46.5 73 51.5 75.5 53 80"
+                          stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+
+                    <!-- Dobras internas harmoniosas - Lado Direito -->
+                    <path d="M79 37C74 37 70.5 40.5 70.5 45.5"
+                          stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                    <path d="M88.5 55.5C82.5 54.5 76.5 57.5 75 63.5"
+                          stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                    <path d="M78.5 74.5C73.5 73 68.5 75.5 67 80"
+                          stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+
+                    <!-- Pontos luminosos sutis (toque lúdico de clareza e conexões) -->
+                    <circle cx="49.5" cy="46.5" r="2.2" fill="currentColor"/>
+                    <circle cx="70.5" cy="46.5" r="2.2" fill="currentColor"/>
+                    <circle cx="60" cy="18.5" r="2.2" fill="currentColor" fill-opacity="0.85"/>
+                </svg>
+            </div>
+
+            <!-- Nome Completo em Tipografia Clássica -->
+            <h1 class="font-display text-xl sm:text-2xl font-medium tracking-wider text-white leading-snug">
+                MÁRCIO LUIZ VIEIRA DA SILVA
+            </h1>
+
+            <!-- Linha Divisória Elegante -->
+            <div class="w-4/5 max-w-[260px] h-[1px] bg-gradient-to-r from-transparent via-white/60 to-transparent mx-auto my-3.5"></div>
+
+            <!-- Título Profissional e CRP -->
+            <p class="text-xs sm:text-sm font-medium tracking-[0.22em] text-slate-100 uppercase">
+                Psicólogo • Psicoterapeuta
+            </p>
+            <div class="mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs tracking-[0.16em] text-slate-200 font-normal">
+                <span>CRP 06-135604</span>
+            </div>
+        </header>
+
+        <!-- Corpo do Cartão (Pano de fundo em azul bem claro e sereno) -->
+        <div class="p-6 sm:p-7 space-y-6 bg-gradient-to-b from-[#edf4fb] via-[#f2f7fc] to-[#e8f0f9]">
+            
+            <!-- Apresentação Acolhedora -->
+            <section class="text-center space-y-3">
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    <strong class="font-medium text-navy-900 block mb-1">Atendimento Psicológico e Psicoterapia</strong>
+                    Um espaço seguro de escuta, acolhimento e autoconhecimento para cuidar da sua saúde emocional.
+                </p>
+
+                <!-- Tags de Atendimento -->
+                <div class="flex flex-wrap items-center justify-center gap-2 pt-1">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium bg-white/80 text-navy-900 border border-[#c7daf0] shadow-2xs">
+                        <i class="fa-solid fa-laptop-medical text-[10px] text-navy-800"></i>
+                        Online e Presencial
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium bg-white/80 text-navy-900 border border-[#c7daf0] shadow-2xs">
+                        <i class="fa-solid fa-heart text-[10px] text-navy-800"></i>
+                        Escuta Acolhedora
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium bg-white/80 text-navy-900 border border-[#c7daf0] shadow-2xs">
+                        <i class="fa-solid fa-shield-halved text-[10px] text-navy-800"></i>
+                        Sigilo Ético
+                    </span>
+                </div>
+            </section>
+
+            <!-- Botões de Ação Rápida -->
+            <section class="space-y-3.5" aria-label="Canais de contato rápido">
+                
+                <!-- 1. Botão Principal WhatsApp -->
+                <a href="https://wa.me/5511959792584?text=Ol%C3%A1%2C%20Dr.%20M%C3%A1rcio!%20Gostaria%20de%20saber%20mais%20sobre%20o%20atendimento%20psicol%C3%B3gico."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="group relative flex items-center justify-between w-full p-4 rounded-2xl bg-navy-900 hover:bg-navy-800 text-white shadow-lg shadow-navy-900/20 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200">
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-300 group-hover:scale-105 transition-transform">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-sm sm:text-base font-semibold tracking-tight">Agendar pelo WhatsApp</span>
+                            <span class="block text-xs text-slate-300 font-normal mt-0.5">(11) 95979-2584</span>
+                        </div>
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white/80 group-hover:bg-white/20 group-hover:translate-x-0.5 transition-all">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </div>
+                </a>
+
+                <!-- 2. Cartão de E-mail com Link Direto + Botão Copiar -->
+                <div class="flex items-stretch rounded-2xl bg-white/95 border border-[#c7daf0] shadow-sm hover:border-navy-900/35 transition-all duration-200 overflow-hidden">
+                    <a href="mailto:psicomarciovieira@gmail.com?subject=Contato%20-%20Atendimento%20Psicol%C3%B3gico"
+                       class="group flex-1 flex items-center gap-3.5 p-3.5 hover:bg-[#f4f8fd] transition-colors min-w-0">
+                        <div class="w-11 h-11 shrink-0 rounded-xl bg-[#e6effa] border border-[#c7daf0] flex items-center justify-center text-navy-900 group-hover:bg-navy-900 group-hover:text-white transition-colors">
+                            <i class="fa-regular fa-envelope text-lg"></i>
+                        </div>
+                        <div class="text-left min-w-0">
+                            <span class="block text-sm font-semibold text-navy-900">Enviar E-mail</span>
+                            <span class="block text-xs text-slate-500 truncate mt-0.5">psicomarciovieira@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Botão Discreto para Copiar E-mail -->
+                    <button type="button"
+                            id="copyEmailBtn"
+                            onclick="copiarEmail()"
+                            title="Copiar endereço de e-mail"
+                            aria-label="Copiar endereço de e-mail"
+                            class="px-3.5 border-l border-[#dce8f6] bg-[#f4f8fd] hover:bg-[#e4eef9] text-slate-600 hover:text-navy-900 flex flex-col items-center justify-center gap-1 transition-colors cursor-pointer shrink-0">
+                        <i id="copyEmailIcon" class="fa-regular fa-copy text-sm"></i>
+                        <span id="copyEmailText" class="text-[10px] font-medium">Copiar</span>
+                    </button>
+                </div>
+
+                <!-- 3 e 4. Ações Secundárias (Salvar Contato vCard + Compartilhar / QR Code) -->
+                <div class="grid grid-cols-2 gap-3 pt-1">
+                    <!-- Salvar na Agenda (vCard .vcf) -->
+                    <button type="button"
+                            onclick="baixarVCard()"
+                            class="flex items-center justify-center gap-2 p-3.5 rounded-2xl bg-white/95 border border-[#c7daf0] hover:border-navy-900/35 hover:bg-white text-navy-900 text-xs sm:text-sm font-medium shadow-sm transition-all duration-200 cursor-pointer active:scale-[0.99]">
+                        <i class="fa-solid fa-address-book text-navy-800"></i>
+                        <span>Salvar Contato</span>
+                    </button>
+
+                    <!-- Compartilhar Cartão / QR Code -->
+                    <button type="button"
+                            onclick="abrirModalCompartilhar()"
+                            class="flex items-center justify-center gap-2 p-3.5 rounded-2xl bg-white/95 border border-[#c7daf0] hover:border-navy-900/35 hover:bg-white text-navy-900 text-xs sm:text-sm font-medium shadow-sm transition-all duration-200 cursor-pointer active:scale-[0.99]">
+                        <i class="fa-solid fa-qrcode text-navy-800"></i>
+                        <span>Compartilhar</span>
+                    </button>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Rodapé Discreto -->
+        <footer class="px-6 py-4 bg-[#e4eef9] border-t border-[#c7daf0] text-center">
+            <p class="text-[11px] text-navy-800/75 tracking-wide">
+                Márcio Luiz Vieira da Silva • Psicólogo • CRP 06-135604
+            </p>
+        </footer>
+    </main>
+
+    <!-- Notificação Flutuante (Toast) -->
+    <div id="toast" role="status" aria-live="polite"
+         class="fixed bottom-6 left-1/2 -translate-x-1/2 translate-y-20 opacity-0 pointer-events-none z-50 flex items-center gap-2.5 px-4 py-3 rounded-full bg-navy-950 text-white text-xs sm:text-sm font-medium shadow-xl transition-all duration-300">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toastMessage">Ação concluída!</span>
+    </div>
+
+    <!-- Modal de Compartilhamento e QR Code -->
+    <div id="shareModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+         class="fixed inset-0 z-40 hidden items-center justify-center p-4 bg-navy-950/60 backdrop-blur-xs transition-opacity duration-200">
+        <div class="relative w-full max-w-sm bg-white rounded-3xl p-6 shadow-2xl border border-slate-200 text-center space-y-5 animate-[fadeIn_0.2s_ease-out]">
+            
+            <!-- Botão Fechar -->
+            <button type="button"
+                    onclick="fecharModalCompartilhar()"
+                    aria-label="Fechar janela de compartilhamento"
+                    class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-colors cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="space-y-1 pt-1">
+                <h2 id="modalTitle" class="font-display text-lg font-semibold text-navy-900">Compartilhar Cartão</h2>
+                <p class="text-xs text-slate-500">Aponte a câmera para acessar o contato direto</p>
+            </div>
+
+            <!-- Container do QR Code -->
+            <div class="mx-auto w-48 h-48 p-3 bg-white rounded-2xl border-2 border-navy-900/10 shadow-inner flex items-center justify-center">
+                <div id="qrcodeContainer" class="flex items-center justify-center"></div>
+            </div>
+
+            <div class="text-xs text-slate-500 space-y-0.5">
+                <p class="font-semibold text-navy-900">Márcio Luiz Vieira da Silva</p>
+                <p>Psicólogo • CRP 06-135604</p>
+            </div>
+
+            <!-- Ações de Compartilhamento -->
+            <div class="space-y-2.5 pt-1">
+                <button type="button"
+                        onclick="compartilharNativoOuCopiar()"
+                        class="w-full py-3 px-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white text-xs sm:text-sm font-medium flex items-center justify-center gap-2 shadow-md transition-colors cursor-pointer">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <span id="shareActionLabel">Copiar Link do Cartão</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Variável para controle do temporizador do toast
+        let toastTimeout;
+
+        /**
+         * Exibe uma notificação elegante na parte inferior da tela
+         */
+        function mostrarToast(mensagem, iconeClass = 'fa-solid fa-circle-check text-emerald-400') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            const toastIcon = document.getElementById('toastIcon');
+
+            toastMessage.textContent = mensagem;
+            toastIcon.className = iconeClass;
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        /**
+         * Copia texto para a área de transferência com fallback seguro para iframes
+         */
+        function copiarTextoSeguro(texto, callbackSucesso) {
+            try {
+                const textArea = document.createElement('textarea');
+                textArea.value = texto;
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-9999px';
+                textArea.style.top = '0';
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                const sucesso = document.execCommand('copy');
+                document.body.removeChild(textArea);
+                if (sucesso && callbackSucesso) {
+                    callbackSucesso();
+                }
+            } catch (err) {
+                console.error('Erro ao copiar texto:', err);
+            }
+        }
+
+        /**
+         * Copia o e-mail profissional e atualiza o estado visual do botão
+         */
+        function copiarEmail() {
+            const email = 'psicomarciovieira@gmail.com';
+            copiarTextoSeguro(email, () => {
+                const icon = document.getElementById('copyEmailIcon');
+                const text = document.getElementById('copyEmailText');
+                const btn = document.getElementById('copyEmailBtn');
+
+                icon.className = 'fa-solid fa-check text-sm text-emerald-600';
+                text.textContent = 'Copiado!';
+                text.classList.add('text-emerald-700');
+                btn.classList.add('bg-emerald-50');
+
+                mostrarToast('E-mail copiado para a área de transferência!');
+
+                setTimeout(() => {
+                    icon.className = 'fa-regular fa-copy text-sm';
+                    text.textContent = 'Copiar';
+                    text.classList.remove('text-emerald-700');
+                    btn.classList.remove('bg-emerald-50');
+                }, 2500);
+            });
+        }
+
+        /**
+         * Gera e baixa um arquivo vCard (.vcf) para salvar direto na agenda do celular
+         */
+        function baixarVCard() {
+            try {
+                const vcardContent = [
+                    'BEGIN:VCARD',
+                    'VERSION:3.0',
+                    'N:Silva;Márcio Luiz Vieira da;;;Psicólogo',
+                    'FN:Márcio Luiz Vieira da Silva - Psicólogo',
+                    'ORG:Consultório de Psicologia',
+                    'TITLE:Psicólogo e Psicoterapeuta (CRP 06-135604)',
+                    'TEL;TYPE=CELL,VOICE,WHATSAPP:+5511959792584',
+                    'EMAIL;TYPE=PREF,INTERNET:psicomarciovieira@gmail.com',
+                    'NOTE:Atendimento Psicológico e Psicoterapia - CRP 06-135604',
+                    'END:VCARD'
+                ].join('\r\n');
+
+                const blob = new Blob([vcardContent], { type: 'text/vcard;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', 'Marcio_Luiz_Psicologo.vcf');
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(url);
+
+                mostrarToast('Cartão de contato (.vcf) baixado!');
+            } catch (error) {
+                console.error('Erro ao gerar vCard:', error);
+                mostrarToast('Não foi possível baixar o contato.', 'fa-solid fa-circle-exclamation text-amber-400');
+            }
+        }
+
+        // Controle do QR Code
+        let qrGerado = false;
+
+        /**
+         * Abre o modal de compartilhamento e gera o QR Code na primeira abertura
+         */
+        function abrirModalCompartilhar() {
+            const modal = document.getElementById('shareModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+
+            if (!qrGerado) {
+                const qrContainer = document.getElementById('qrcodeContainer');
+                qrContainer.innerHTML = '';
+                // Usa a URL atual da página ou o link direto do WhatsApp como fallback caso esteja em preview local
+                const urlParaQR = (window.location.href && window.location.href.startsWith('http'))
+                    ? window.location.href
+                    : 'https://wa.me/5511959792584';
+
+                new QRCode(qrContainer, {
+                    text: urlParaQR,
+                    width: 164,
+                    height: 164,
+                    colorDark: '#1f304b',
+                    colorLight: '#ffffff',
+                    correctLevel: QRCode.CorrectLevel.M
+                });
+                qrGerado = true;
+            }
+        }
+
+        /**
+         * Fecha o modal de compartilhamento
+         */
+        function fecharModalCompartilhar() {
+            const modal = document.getElementById('shareModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        /**
+         * Compartilha via Web Share API (celular) ou copia o link
+         */
+        function compartilharNativoOuCopiar() {
+            const urlCompartilhar = (window.location.href && window.location.href.startsWith('http'))
+                ? window.location.href
+                : 'https://wa.me/5511959792584';
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Márcio Luiz Vieira da Silva - Psicólogo e Psicoterapeuta',
+                    text: 'Cartão digital de contato - Psicólogo Márcio Luiz Vieira da Silva (CRP 06-135604)',
+                    url: urlCompartilhar
+                }).catch(() => {
+                    // Caso o usuário cancele o compartilhamento nativo, não faz nada
+                });
+            } else {
+                copiarTextoSeguro(urlCompartilhar, () => {
+                    mostrarToast('Link copiado para compartilhar!');
+                });
+            }
+        }
+
+        // Fecha o modal ao clicar fora da caixa central ou pressionar ESC
+        document.getElementById('shareModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                fecharModalCompartilhar();
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                fecharModalCompartilhar();
+            }
+        });
+    </script>
+</body>
+</html>
